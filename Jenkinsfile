@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo 'Installing dependencies...'
                 sh '''
-                    pip install -r requirements.txt
+                    pip install --n0-cache-dir -r requirements.txt
                 '''
             }
         }
